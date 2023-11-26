@@ -1,0 +1,53 @@
+//POST/"registration/lender" 
+{
+  "username": "lender",
+  "password": "tainaparola",
+  "name": "lender",
+  "email": "lender@email.com",
+  "availableFunds": 1000
+}
+
+//POST/"registration/borrower"
+{
+  "username": "borrower",
+  "password": "tainaparola",
+  "name": "borrower",
+  "email": "lender@email.com"
+  
+}
+
+//POST/"/borrower/login"
+{
+    "username": "borrower",
+    "password": "tainaparola"
+}
+
+//GET/all-lenders
+
+//POST/"contract/create"
+{
+  "lenderUsername": "lender",
+  "borrowerUsername": "borrower",
+  "amount": 300
+}
+
+//POST/"borrower-payment"
+{
+    "borrowerUsername": "borrower",
+    "amount": 150
+}
+
+//report/GET/"/contract/report/1"
+
+//POST"borrower-payment"
+{
+    "borrowerUsername": "borrower",
+    "amount": 150
+}
+
+//borrower logout POST/"/borrower/logout"
+{
+    "username": "borrower"
+}
+
+// delete contract /DELETE/"/contract/delete/1"
