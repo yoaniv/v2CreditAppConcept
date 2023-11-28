@@ -12,6 +12,5 @@ import java.util.Optional;
 public interface LenderRepository extends JpaRepository<Lender,Long> {
 
     List<Lender> findAll();
-
     Optional<Lender> findByUsername(String username);
 }

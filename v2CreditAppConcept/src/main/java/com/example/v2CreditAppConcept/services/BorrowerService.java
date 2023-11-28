@@ -4,7 +4,6 @@ import com.example.v2CreditAppConcept.entities.Borrower;
 import com.example.v2CreditAppConcept.entities.dto.BorrowerLoginDto;
 import com.example.v2CreditAppConcept.entities.dto.BorrowerLogoutDto;
 import com.example.v2CreditAppConcept.entities.dto.BorrowerRegistrationDto;
-import com.example.v2CreditAppConcept.exceptions.BorrowerLoginException;
 import com.example.v2CreditAppConcept.repositories.BorrowerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

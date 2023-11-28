@@ -2,6 +2,8 @@ package com.example.v2CreditAppConcept.controllers;
 
 import com.example.v2CreditAppConcept.services.ContractService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,9 +19,9 @@ public class ReportController {
     }
 
     @GetMapping ("/contract/report/{id}")
-    private String report(@PathVariable long id){
+    private ResponseEntity<String> report(@PathVariable long id){
 
 
-        return this.contractService.report(id);
+        return new ResponseEntity<>(this.contractService.report(id), HttpStatus.OK);
     }
 }

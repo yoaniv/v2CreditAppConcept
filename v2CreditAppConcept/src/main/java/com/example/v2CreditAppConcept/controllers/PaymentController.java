@@ -24,11 +24,11 @@ public class PaymentController {
     }
 
     @PutMapping("/borrower-payment")
-    private String createPayment(@RequestBody @Valid PaymentDto paymentDto)throws PaymentException{
+    public ResponseEntity<String> createPayment(@RequestBody @Valid PaymentDto paymentDto)throws PaymentException{
 
 this.contractService.createPayment(paymentDto);
 
-        return "Payment is successful";
+        return new ResponseEntity<>( "Payment is successful",HttpStatus.OK);
     }
     @ExceptionHandler(RegistrationException.class)
     public ResponseEntity<String> handleException(PaymentException ex) {

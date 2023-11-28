@@ -28,6 +28,8 @@ public class Lender {
     @Column(name = "available_funds")
     private int availableFunds;
 
+    private boolean isLogged;
+
     public Lender() {
     }
 
@@ -77,5 +79,13 @@ public class Lender {
 
     public void setAvailableFunds(int availableFunds) {
         this.availableFunds = availableFunds;
+    }
+
+    public boolean isLogged() {
+        return isLogged;
+    }
+
+    public void setLogged(boolean logged) {
+        isLogged = logged;
     }
 }
