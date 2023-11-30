@@ -9,7 +9,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(ReportController.class)
@@ -22,7 +21,7 @@ public class ReportControllerTest {
     private ContractService contractService;
 
     @Test
-    void testReportEndpoint() throws Exception {
+    void testReport() throws Exception {
         long contractId = 1L;
 
 
