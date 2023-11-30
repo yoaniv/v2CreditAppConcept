@@ -19,7 +19,7 @@ v2CreditAppConcept is a web application that allows users to manage lending cont
 ## Features
 
 - User Registration: Lenders and borrowers can register for an account.
-- Login: Lenders can log in to their accounts.
+- Login: Lenders and Borrowers can log in to their accounts.
 - Create Contract: Lenders can create lending contracts with borrowers.
 - Check Report: Users can view reports for specific contracts.
 - Make Payments: Borrowers can make payments towards their contracts.
